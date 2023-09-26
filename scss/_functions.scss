@@ -1,0 +1,13 @@
+$color100: 100;
+
+@for $i from 1 through $color100 {
+  .color-#{$i} {
+    @if $i <= 40 {
+      background-color: hsl(353, 100%, 47%) !important;
+    } @else if $i <= 69 {
+      background-color: #ffa710 !important;
+    } @else {
+      background-color: #339900 !important;
+    }
+  }
+}
