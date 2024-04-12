@@ -1,0 +1,39 @@
+//nesting 
+.showcase {
+    nav {
+        @include flex-container;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                padding: 15px;
+
+                &:last-of-type {
+                    padding-right: 0;
+                }
+
+                a {
+                    color: set-text-color($primary-color);
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &-content {
+        @include flex-container;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 30px;
+
+        img {
+            width: 50%;
+        }
+    }
+}

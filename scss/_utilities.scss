@@ -1,0 +1,14 @@
+.container {
+    max-width: $container-width;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.showcase {
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+
+    .grid-section.container {
+        max-width: calc(#{$container-width} + 200px);
+    }
+}

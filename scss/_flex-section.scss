@@ -1,0 +1,17 @@
+.flex-section {
+    .flex-content {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .text {
+            h2, p {
+                color: set-text-color($primary-color);
+            }
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+}

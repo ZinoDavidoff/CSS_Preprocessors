@@ -1,13 +1,16 @@
-$color100: 100;
 
-@for $i from 1 through $color100 {
-  .color-#{$i} {
-    @if $i <= 40 {
-      background-color: hsl(353, 100%, 47%) !important;
-    } @else if $i <= 69 {
-      background-color: #ffa710 !important;
-    } @else {
-      background-color: #339900 !important;
-    }
+//functions 
+@function set-text-color($color) {
+  @if(lightness($color) > 70 ) {
+      @return #333;
+  } @else {
+      @return #fff;
+  }
+}
+
+// loops
+@for $i from 1 through 5 {
+  .my-#{$i} {
+      margin: #{$i}rem 0;
   }
 }

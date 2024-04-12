@@ -1,0 +1,5 @@
+//mixins
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+}
